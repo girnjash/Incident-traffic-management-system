@@ -1,0 +1,286 @@
+/* Main CSS file for IncidentX - beginner friendly styles */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f6ff;
+    color: #263449;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 18px 6%;
+    border-bottom: 3px solid #dce8ff;
+    box-shadow: 0 3px 12px rgba(28, 64, 120, 0.07);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #173b70;
+}
+
+.logo small {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #71819a;
+    margin-top: 4px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #35445b;
+    margin: 0 8px;
+    padding: 9px 11px;
+    border-radius: 6px;
+}
+
+nav a:hover, nav a.active {
+    color: #ffffff;
+    background-color: #2878df;
+}
+
+main {
+    width: 88%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding: 35px 0;
+}
+
+.hero-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #173b70;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #e66b35;
+}
+
+p {
+    line-height: 1.6;
+    color: #58677d;
+}
+
+.button, button {
+    display: inline-block;
+    background-color: #2878df;
+    color: white;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 8px 5px 8px 0;
+}
+
+.button.secondary {
+    background-color: #e66b35;
+}
+
+.button:hover, button:hover {
+    opacity: 0.88;
+}
+
+.info-box, .card, .form-card, .map-card {
+    background-color: #ffffff;
+    padding: 22px;
+    border: 1px solid #e0e8f5;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 14px rgba(36, 70, 120, 0.06);
+}
+
+.hero-map {
+    flex: 1;
+    min-width: 280px;
+    background: linear-gradient(135deg, #dcecff, #e8f8f4);
+    border: 1px solid #c8def5;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+}
+
+.stats, .cards, .form-row, .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.stat, .card, .feature {
+    flex: 1;
+    min-width: 190px;
+}
+
+.stat {
+    background-color: #ffffff;
+    padding: 18px;
+    border: 1px solid #dce7f7;
+    border-top: 4px solid #2878df;
+    border-radius: 9px;
+}
+
+.stat:nth-child(2) {
+    border-top-color: #e66b35;
+}
+
+.stat:nth-child(3) {
+    border-top-color: #20a58a;
+}
+
+.stat strong {
+    display: block;
+    font-size: 25px;
+    color: #2878df;
+}
+
+h1, h2, h3 {
+    color: #173b70;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin: 13px 0 6px;
+    font-weight: bold;
+    color: #35445b;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c7d4e6;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #fbfdff;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #2878df;
+    box-shadow: 0 0 0 3px #dceaff;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.form-row > div {
+    flex: 1;
+    min-width: 180px;
+}
+
+.incident {
+    border-left: 5px solid #e66b35;
+    padding: 15px;
+    background-color: #ffffff;
+    margin: 12px 0;
+    border-radius: 7px;
+    box-shadow: 0 3px 10px rgba(36, 70, 120, 0.05);
+}
+
+.incident:nth-child(even) {
+    border-left-color: #20a58a;
+}
+
+.severity {
+    display: inline-block;
+    padding: 4px 9px;
+    color: #9b4a13;
+    background-color: #fff0df;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.map-frame {
+    width: 100%;
+    height: 430px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.steps .card {
+    min-width: 180px;
+    border-top: 4px solid #20a58a;
+}
+
+.steps .card:nth-child(even) {
+    border-top-color: #e66b35;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    background-color: #173b70;
+    color: white;
+    margin-top: 45px;
+}
+
+footer p {
+    color: #e5edfa;
+}
+
+.note {
+    background-color: #e8f3ff;
+    padding: 12px;
+    border-left: 4px solid #2878df;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 4px 2px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+}

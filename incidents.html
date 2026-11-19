@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incidents | IncidentX</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <div class="logo">IncidentX<small>INDIA INCIDENT RESPONSE</small></div>
+        <nav>
+            <a href="index.html" >Home</a>
+            <a href="incidents.html" class="active">Incidents</a>
+            <a href="map.html" >Map</a>
+            <a href="about.html" >About</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="page-title">
+        <h1>Report an Incident</h1>
+        <p>Enter the details of a traffic incident in the form below.</p>
+    </div>
+    <section class="form-card">
+        <h2>Incident Details</h2>
+        <form>
+            <label for="category">Incident Category</label>
+            <select id="category">
+                <option>Road Accident</option><option>Fire</option>
+                <option>Medical Emergency</option><option>Traffic Disruption</option>
+                <option>Road Hazard</option><option>Other</option>
+            </select>
+            <label>Severity</label>
+            <div class="form-row">
+                <div><label><input type="radio" name="severity" style="width:auto;"> Low</label></div>
+                <div><label><input type="radio" name="severity" style="width:auto;"> Medium</label></div>
+                <div><label><input type="radio" name="severity" style="width:auto;"> High</label></div>
+                <div><label><input type="radio" name="severity" style="width:auto;"> Critical</label></div>
+            </div>
+            <div class="form-row">
+                <div><label for="injured">People Injured</label><input id="injured" type="number" min="0" placeholder="Enter number"></div>
+                <div><label for="vehicles">Vehicles Involved</label><input id="vehicles" type="number" min="0" placeholder="Enter number"></div>
+            </div>
+            <label for="description">Description</label>
+            <textarea id="description" rows="4" placeholder="Describe what happened"></textarea>
+            <label for="location">Incident Location</label>
+            <input id="location" type="text" placeholder="Area, road, landmark or city">
+            <p class="note">This is a static demonstration form. Submitting and saving reports requires JavaScript or a backend, which is not included in this version.</p>
+            <button type="button">Submit (Demo Only)</button>
+        </form>
+    </section>
+    <h2>Sample Reported Incidents</h2>
+    <div class="incident"><b>INC-001 - Road Accident</b> <span class="severity">High</span><p>Location: Chandigarh Road</p><p>Status: Reported</p></div>
+    <div class="incident"><b>INC-002 - Traffic Disruption</b> <span class="severity">Medium</span><p>Location: Phagwara</p><p>Status: Investigating</p></div>
+    <div class="incident"><b>INC-003 - Road Hazard</b> <span class="severity">Low</span><p>Location: Jalandhar Bypass</p><p>Status: Reported</p></div>
+</main>
+
+<footer>
+    <p>IncidentX - Traffic Incident Management System</p>
+    <p>Student Project | HTML and CSS</p>
+</footer>
+</body>
+</html>
